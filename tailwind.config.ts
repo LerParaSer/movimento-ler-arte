@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'gothic': ['League Gothic', 'sans-serif'],
+        'nunito': ['Nunito', 'sans-serif'],
+        'script': ['Kalam', 'cursive'], // Using Kalam as Learning Curve alternative
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +51,13 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        brand: {
+          blue: "hsl(var(--brand-blue))",
+          brown: "hsl(var(--brand-brown))",
+          yellow: "hsl(var(--brand-yellow))",
+          pink: "hsl(var(--brand-pink))",
+          orange: "hsl(var(--brand-orange))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
