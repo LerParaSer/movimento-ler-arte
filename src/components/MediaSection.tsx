@@ -40,13 +40,15 @@ export const MediaSection = () => {
               </div>
               
               <div className="bg-background rounded-lg p-6 mb-6">
-                <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <div className="text-center">
-                    <div className="text-4xl mb-2">▶️</div>
-                    <p className="font-nunito text-sm text-muted-foreground">
-                      Vídeo do YouTube
-                    </p>
-                  </div>
+                <div className="aspect-video rounded-lg overflow-hidden mb-4">
+                  <iframe
+                    src={interview.url.replace('watch?v=', 'embed/').replace('&t=159s', '?start=159')}
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title={interview.title}
+                  />
                 </div>
                 
                 <div className="text-center">
