@@ -37,20 +37,14 @@ export const TestimonialsSection = () => {
               </div>
               
               <div className="bg-secondary/20 rounded-lg p-4 mb-4">
-                <p className="font-nunito text-sm text-muted-foreground text-center">
-                  Post do Instagram incorporado
-                </p>
-                <div className="mt-4 text-center">
-                  <a 
-                    href={`https://www.instagram.com/p/${testimonial.id}/`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 font-nunito text-primary hover:text-primary/80 transition-colors text-sm font-semibold"
-                  >
-                    <span>📸</span>
-                    Ver no Instagram
-                  </a>
-                </div>
+                <iframe
+                  src={`https://www.instagram.com/p/${testimonial.id}/embed/`}
+                  className="w-full h-96 border-0"
+                  scrolling="no"
+                  frameBorder="0"
+                  allow="encrypted-media"
+                  title={testimonial.title}
+                />
               </div>
               
               <div className="text-center">
