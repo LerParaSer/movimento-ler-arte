@@ -1,3 +1,7 @@
+import checkIcon from "@/assets/graphics/check-icon.png";
+import searchIcon from "@/assets/graphics/search-icon.png";
+import chartIcon from "@/assets/graphics/chart-icon.png";
+
 export const AboutSection = () => {
   return (
     <section id="sobre" className="py-20 bg-secondary/30">
@@ -22,7 +26,9 @@ export const AboutSection = () => {
           
           <div className="mt-12 grid md:grid-cols-3 gap-8">
             <div className="bg-background rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">🎯</div>
+              <div className="flex justify-center mb-4">
+                <img src={checkIcon} alt="Nossa Missão" className="w-12 h-12" />
+              </div>
               <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
                 Nossa Missão
               </h3>
@@ -32,7 +38,9 @@ export const AboutSection = () => {
             </div>
             
             <div className="bg-background rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">👥</div>
+              <div className="flex justify-center mb-4">
+                <img src={searchIcon} alt="Nosso Foco" className="w-12 h-12" />
+              </div>
               <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
                 Nosso Foco
               </h3>
@@ -42,7 +50,9 @@ export const AboutSection = () => {
             </div>
             
             <div className="bg-background rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">🌱</div>
+              <div className="flex justify-center mb-4">
+                <img src={chartIcon} alt="Nosso Impacto" className="w-12 h-12" />
+              </div>
               <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
                 Nosso Impacto
               </h3>
