@@ -3,6 +3,8 @@ import { BookOpen, Users, School, Heart, UserCheck, Calendar } from "lucide-reac
 import bookReadingIcon from "@/assets/graphics/book-reading.png";
 import starIcon from "@/assets/graphics/star.png";
 import houseIcon from "@/assets/graphics/house.png";
+import booksIcon from "@/assets/graphics/books.png";
+import volunteerHandsIcon from "@/assets/graphics/volunteer-hands.png";
 
 export const ImpactSection = () => {
   return (
@@ -46,7 +48,7 @@ export const ImpactSection = () => {
           
           <div className="bg-background rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-4">
-              <img src={bookReadingIcon} alt="Diversidade de títulos" className="w-12 h-12" />
+              <img src={booksIcon} alt="Diversidade de títulos" className="w-12 h-12" />
             </div>
             <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
               Diversidade de Títulos
@@ -58,7 +60,7 @@ export const ImpactSection = () => {
           
           <div className="bg-background rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-4">
-              <img src={houseIcon} alt="Campanhas de arrecadação" className="w-12 h-12" />
+              <img src={volunteerHandsIcon} alt="Campanhas de arrecadação" className="w-12 h-12" />
             </div>
             <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
               Campanhas de Arrecadação
