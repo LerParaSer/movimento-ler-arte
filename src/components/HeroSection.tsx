@@ -8,7 +8,8 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="font-gothic text-4xl lg:text-5xl font-bold text-foreground uppercase tracking-wide leading-tight mb-6">
-              Formar através da <span className="text-primary">leitura.</span> Transformar através da <span className="text-accent">arte.</span>
+              Formar através da <span className="text-primary">leitura.</span><br />
+              Transformar através da <span className="text-accent">arte.</span>
             </h1>
             
             <p className="font-nunito text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
