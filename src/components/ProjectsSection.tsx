@@ -14,62 +14,52 @@ export const ProjectsSection = () => {
     {
       id: 1,
       image: projeto1,
-      title: "Roda de Leitura",
-      description: "Crianças participando de roda de leitura com livros educativos"
+      title: "Roda de Leitura"
     },
     {
       id: 2,
       image: projeto2,
-      title: "Leitura Compartilhada",
-      description: "Momento de leitura compartilhada entre voluntária e criança"
+      title: "Leitura Compartilhada"
     },
     {
       id: 3,
       image: projeto3,
-      title: "Atividade em Grupo",
-      description: "Crianças reunidas em atividade de leitura coletiva"
+      title: "Atividade em Grupo"
     },
     {
       id: 4,
       image: projeto4,
-      title: "Círculo de Leitura",
-      description: "Participantes em círculo durante atividade de leitura"
+      title: "Círculo de Leitura"
     },
     {
       id: 5,
       image: projeto5,
-      title: "Oficina Artística",
-      description: "Crianças desenvolvendo atividades artísticas com tintas"
+      title: "Oficina Artística"
     },
     {
       id: 6,
       image: projeto6,
-      title: "Arte Colaborativa",
-      description: "Oficina de arte com participação de voluntárias e crianças"
+      title: "Arte Colaborativa"
     },
     {
       id: 7,
       image: projeto7,
-      title: "Momento de Alegria",
-      description: "Criança exibindo seu desenho com orgulho e alegria"
+      title: "Momento de Alegria"
     },
     {
       id: 8,
       image: projeto8,
-      title: "Resultado das Oficinas",
-      description: "Apresentação dos trabalhos artísticos desenvolvidos"
+      title: "Resultado das Oficinas"
     },
     {
       id: 9,
       image: projeto9,
-      title: "Atividade Criativa",
-      description: "Crianças em oficina de arte e pintura coletiva"
+      title: "Atividade Criativa"
     },
     {
       id: 10,
       image: projeto10,
-      title: "Arte em Desenvolvimento",
-      description: "Momento de concentração durante atividade artística"
+      title: "Arte em Desenvolvimento"
     }
   ];
 
@@ -89,26 +79,18 @@ export const ProjectsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div 
               key={project.id}
               className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="aspect-square overflow-hidden">
+              <div className="overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-              </div>
-              <div className="p-4">
-                <h3 className="font-gothic text-lg font-bold text-foreground uppercase mb-2">
-                  {project.title}
-                </h3>
-                <p className="font-nunito text-muted-foreground text-sm">
-                  {project.description}
-                </p>
               </div>
             </div>
           ))}
