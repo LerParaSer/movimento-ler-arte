@@ -1,3 +1,10 @@
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import projeto1 from "@/assets/projects/projeto-1.jpg";
 import projeto2 from "@/assets/projects/projeto-2.jpg";
 import projeto3 from "@/assets/projects/projeto-3.jpg";
@@ -10,7 +17,7 @@ import projeto9 from "@/assets/projects/projeto-9.jpg";
 import projeto10 from "@/assets/projects/projeto-10.jpg";
 
 export const ProjectsSection = () => {
-  const projects = [
+  const projectsGroup1 = [
     {
       id: 1,
       image: projeto1,
@@ -35,7 +42,10 @@ export const ProjectsSection = () => {
       id: 5,
       image: projeto5,
       title: "Oficina Artística"
-    },
+    }
+  ];
+
+  const projectsGroup2 = [
     {
       id: 6,
       image: projeto6,
@@ -78,21 +88,58 @@ export const ProjectsSection = () => {
           </p>
         </div>
         
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-          {projects.map((project) => (
-            <div 
-              key={project.id}
-              className="break-inside-avoid mb-6 group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-            >
-              <div className="overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            </div>
-          ))}
+        <div className="space-y-12">
+          {/* Primeiro Carrossel */}
+          <div className="relative">
+            <h3 className="font-gothic text-2xl font-bold text-foreground uppercase mb-6 text-center">
+              Rodas de Leitura e Atividades
+            </h3>
+            <Carousel className="w-full max-w-6xl mx-auto">
+              <CarouselContent className="-ml-4">
+                {projectsGroup1.map((project) => (
+                  <CarouselItem key={project.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                    <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                      <div className="overflow-hidden">
+                        <img 
+                          src={project.image} 
+                          alt={project.title}
+                          className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+
+          {/* Segundo Carrossel */}
+          <div className="relative">
+            <h3 className="font-gothic text-2xl font-bold text-foreground uppercase mb-6 text-center">
+              Oficinas Artísticas e Criatividade
+            </h3>
+            <Carousel className="w-full max-w-6xl mx-auto">
+              <CarouselContent className="-ml-4">
+                {projectsGroup2.map((project) => (
+                  <CarouselItem key={project.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                    <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                      <div className="overflow-hidden">
+                        <img 
+                          src={project.image} 
+                          alt={project.title}
+                          className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
         </div>
         
         <div className="text-center mt-12">
