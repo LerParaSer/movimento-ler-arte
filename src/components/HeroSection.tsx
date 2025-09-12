@@ -12,7 +12,7 @@ export const HeroSection = () => {
               Transformar através da <span className="text-accent">arte.</span>
             </h1>
             
-            <p className="font-nunito text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="font-nunito text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
               Um movimento que leva literatura e experiências culturais a crianças, 
               despertando imaginação, criatividade e novas possibilidades de vida.
             </p>
