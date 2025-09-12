@@ -25,7 +25,7 @@ export const AboutSection = () => {
           </div>
           
           <div className="mt-12 grid md:grid-cols-3 gap-8">
-            <div className="bg-background rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex justify-center mb-4">
                 <img src={checkIcon} alt="Nossa Missão" className="w-12 h-12" />
               </div>
@@ -37,7 +37,7 @@ export const AboutSection = () => {
               </p>
             </div>
             
-            <div className="bg-background rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex justify-center mb-4">
                 <img src={searchIcon} alt="Nosso Foco" className="w-12 h-12" />
               </div>
@@ -49,7 +49,7 @@ export const AboutSection = () => {
               </p>
             </div>
             
-            <div className="bg-background rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex justify-center mb-4">
                 <img src={chartIcon} alt="Nosso Impacto" className="w-12 h-12" />
               </div>
