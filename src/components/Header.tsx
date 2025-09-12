@@ -20,7 +20,11 @@ export const Header = () => {
           <a href="#contribuir" className="font-nunito text-foreground hover:text-primary transition-colors">
             Como Contribuir
           </a>
-          <Button variant="hero" size="sm">
+          <Button 
+            variant="hero" 
+            size="sm"
+            onClick={() => window.open('https://linktr.ee/movimentolerparaser', '_blank')}
+          >
             Apoiar Movimento
           </Button>
         </nav>

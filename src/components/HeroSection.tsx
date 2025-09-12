@@ -18,11 +18,20 @@ export const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="group">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="group"
+                onClick={() => window.open('https://linktr.ee/movimentolerparaser', '_blank')}
+              >
                 👉 Quero apoiar essa transformação
                 <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
               </Button>
-              <Button variant="outline" size="lg">
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Saiba mais sobre nós
               </Button>
             </div>

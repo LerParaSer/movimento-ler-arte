@@ -23,7 +23,12 @@ export const ContributeSection = () => {
               Participe das rodas de leitura e oficinas. Sua presença e energia fazem toda a diferença 
               na vida das crianças.
             </p>
-            <Button variant="default" size="lg" className="w-full">
+            <Button 
+              variant="default" 
+              size="lg" 
+              className="w-full"
+              onClick={() => window.open('https://linktr.ee/movimentolerparaser', '_blank')}
+            >
               Quero ser voluntário
             </Button>
           </div>
@@ -36,7 +41,12 @@ export const ContributeSection = () => {
             <p className="font-nunito text-muted-foreground mb-6">
               Contribua com livros novos ou usados. Cada livro doado pode transformar a vida de uma criança.
             </p>
-            <Button variant="accent" size="lg" className="w-full">
+            <Button 
+              variant="accent" 
+              size="lg" 
+              className="w-full"
+              onClick={() => window.open('https://linktr.ee/movimentolerparaser', '_blank')}
+            >
               Doar livros
             </Button>
           </div>
@@ -49,7 +59,12 @@ export const ContributeSection = () => {
             <p className="font-nunito text-muted-foreground mb-6">
               Sua empresa pode apoiar campanhas e projetos sociais. Juntos, amplificamos o impacto.
             </p>
-            <Button variant="blue" size="lg" className="w-full">
+            <Button 
+              variant="blue" 
+              size="lg" 
+              className="w-full"
+              onClick={() => window.open('https://linktr.ee/movimentolerparaser', '_blank')}
+            >
               Fazer parceria
             </Button>
           </div>
