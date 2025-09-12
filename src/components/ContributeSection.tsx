@@ -1,4 +1,7 @@
 import { Button } from "@/components/ui/button";
+import plusIcon from "@/assets/graphics/plus.png";
+import childReadingIcon from "@/assets/graphics/child-reading.png";
+import houseIcon from "@/assets/graphics/house.png";
 
 export const ContributeSection = () => {
   return (
@@ -15,7 +18,9 @@ export const ContributeSection = () => {
         
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 text-center border border-primary/20 hover:shadow-xl transition-all hover:-translate-y-2">
-            <div className="text-6xl mb-6">🙋</div>
+            <div className="flex justify-center mb-6">
+              <img src={plusIcon} alt="Voluntariado" className="w-16 h-16" />
+            </div>
             <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-4">
               Voluntariado
             </h3>
@@ -34,7 +39,9 @@ export const ContributeSection = () => {
           </div>
           
           <div className="bg-gradient-to-br from-accent/10 to-accent/5 rounded-2xl p-8 text-center border border-accent/20 hover:shadow-xl transition-all hover:-translate-y-2">
-            <div className="text-6xl mb-6">📚</div>
+            <div className="flex justify-center mb-6">
+              <img src={childReadingIcon} alt="Doações de livros" className="w-16 h-16" />
+            </div>
             <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-4">
               Doações
             </h3>
@@ -52,7 +59,9 @@ export const ContributeSection = () => {
           </div>
           
           <div className="bg-gradient-to-br from-brand-blue/10 to-brand-blue/5 rounded-2xl p-8 text-center border border-brand-blue/20 hover:shadow-xl transition-all hover:-translate-y-2">
-            <div className="text-6xl mb-6">🤝</div>
+            <div className="flex justify-center mb-6">
+              <img src={houseIcon} alt="Parcerias" className="w-16 h-16" />
+            </div>
             <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-4">
               Parcerias
             </h3>

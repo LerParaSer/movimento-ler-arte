@@ -1,3 +1,5 @@
+import emailIcon from "@/assets/graphics/email.png";
+
 export const MediaSection = () => {
   const interviews = [
     {
@@ -30,7 +32,9 @@ export const MediaSection = () => {
           {interviews.map((interview, index) => (
             <div key={index} className="bg-secondary/20 rounded-xl p-6 hover:shadow-xl transition-all hover:-translate-y-2">
               <div className="text-center mb-6">
-                <div className="text-5xl mb-4">🎥</div>
+                <div className="flex justify-center mb-4">
+                  <img src={emailIcon} alt="Entrevista" className="w-12 h-12" />
+                </div>
                 <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-2">
                   {interview.title}
                 </h3>
@@ -61,7 +65,7 @@ export const MediaSection = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 font-nunito text-primary hover:text-primary/80 transition-colors font-semibold"
                   >
-                    <span>🔗</span>
+                    <img src={emailIcon} alt="Link" className="w-4 h-4" />
                     Assistir no YouTube
                   </a>
                 </div>
