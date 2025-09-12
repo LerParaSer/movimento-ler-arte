@@ -1,6 +1,6 @@
 import { StatCard } from "@/components/ui/stat-card";
 import { BookOpen, Users, School, Heart, UserCheck, Calendar } from "lucide-react";
-import childReadingIcon from "@/assets/graphics/child-reading.png";
+import bookReadingIcon from "@/assets/graphics/book-reading.png";
 import starIcon from "@/assets/graphics/star.png";
 import houseIcon from "@/assets/graphics/house.png";
 
@@ -22,7 +22,7 @@ export const ImpactSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <div className="bg-background rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-4">
-              <img src={childReadingIcon} alt="Rodas de leitura" className="w-12 h-12" />
+              <img src={bookReadingIcon} alt="Rodas de leitura" className="w-12 h-12" />
             </div>
             <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
               Rodas de Leitura
@@ -46,7 +46,7 @@ export const ImpactSection = () => {
           
           <div className="bg-background rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-4">
-              <img src={childReadingIcon} alt="Diversidade de títulos" className="w-12 h-12" />
+              <img src={bookReadingIcon} alt="Diversidade de títulos" className="w-12 h-12" />
             </div>
             <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
               Diversidade de Títulos
