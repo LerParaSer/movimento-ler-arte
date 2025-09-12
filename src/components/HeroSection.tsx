@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-reading.jpg";
-import bookReadingIcon from "@/assets/graphics/book-reading.png";
+import childReadingIcon from "@/assets/graphics/child-reading.png";
 import starIcon from "@/assets/graphics/star.png";
 
 export const HeroSection = () => {
@@ -50,10 +50,10 @@ export const HeroSection = () => {
             </div>
             
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 bg-brand-yellow p-3 rounded-full shadow-lg animate-bounce">
-              <img src={bookReadingIcon} alt="Criança lendo" className="w-8 h-8" />
+            <div className="absolute -top-4 -right-4 bg-white p-3 rounded-full shadow-lg animate-bounce">
+              <img src={childReadingIcon} alt="Criança lendo" className="w-8 h-8" />
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-brand-pink p-3 rounded-full shadow-lg animate-bounce delay-1000">
+            <div className="absolute -bottom-4 -left-4 bg-white p-3 rounded-full shadow-lg animate-bounce delay-1000">
               <img src={starIcon} alt="Estrela" className="w-8 h-8" />
             </div>
           </div>
