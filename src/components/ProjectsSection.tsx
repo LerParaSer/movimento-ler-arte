@@ -74,16 +74,15 @@ export const ProjectsSection = () => {
             "Momentos que transformam vidas através da leitura e da arte"
           </p>
           <p className="font-nunito text-lg text-muted-foreground max-w-3xl mx-auto">
-            Confira alguns dos nossos projetos em ação nas escolas e instituições parceiras, 
-            onde levamos literatura, arte e muito carinho para as crianças.
+            Registros das nossas atividades nas escolas e instituições parceiras
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
           {projects.map((project) => (
             <div 
               key={project.id}
-              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="break-inside-avoid mb-6 group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <div className="overflow-hidden">
                 <img 
