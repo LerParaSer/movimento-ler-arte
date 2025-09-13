@@ -82,7 +82,7 @@ export const Footer = () => {
                 href="mailto:movimelerparaser@gmail.com"
                 className="flex items-center gap-3 font-nunito text-background/80 hover:text-primary transition-colors"
               >
-                <Mail className="w-4 h-4" />
+                <Mail className="w-5 h-5" />
                 movimelerparaser@gmail.com
               </a>
             </div>
