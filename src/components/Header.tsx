@@ -19,20 +19,12 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img 
               src={logoMovimento} 
               alt="Movimento Ler para Ser" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
-            <div className="hidden sm:block">
-              <h1 className="font-gothic text-xl font-bold text-primary uppercase tracking-wide">
-                Movimento Ler para Ser
-              </h1>
-              <p className="font-script text-sm text-accent -mt-1">
-                "Formar através da leitura"
-              </p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
