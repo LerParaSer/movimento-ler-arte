@@ -43,7 +43,7 @@ export const MediaSection = () => {
                 </p>
               </div>
               
-              <div className="bg-background rounded-lg p-6 mb-6">
+              <div className="bg-secondary rounded-lg p-6 mb-6">
                 <div className="aspect-video rounded-lg overflow-hidden mb-4">
                   <iframe
                     src={interview.url.replace('watch?v=', 'embed/').replace('&t=159s', '?start=159')}
@@ -63,9 +63,8 @@ export const MediaSection = () => {
                     href={interview.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 font-nunito text-primary hover:text-primary/80 transition-colors font-semibold"
+                    className="font-nunito text-primary hover:text-primary/80 transition-colors font-semibold"
                   >
-                    <img src={emailIcon} alt="Link" className="w-4 h-4" />
                     Assistir no YouTube
                   </a>
                 </div>
