@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, ExternalLink } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 import buscaIcon from "@/assets/graphics/busca.png";
 import casaIcon from "@/assets/graphics/casa.png";
 import starIcon from "@/assets/graphics/star.png";
@@ -19,15 +19,15 @@ export const Footer = () => {
               enriquecedoras a crianças em situação de vulnerabilidade.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white">
+              <Button variant="outline" size="sm" className="border-black text-black hover:-translate-y-1 transition-transform duration-200">
                 <img src={buscaIcon} alt="O que fazemos" className="w-4 h-4 mr-2" />
                 O que fazemos
               </Button>
-              <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white">
+              <Button variant="outline" size="sm" className="border-black text-black hover:-translate-y-1 transition-transform duration-200">
                 <img src={casaIcon} alt="Como ajudar" className="w-4 h-4 mr-2" />
                 Como ajudar
               </Button>
-              <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white">
+              <Button variant="outline" size="sm" className="border-black text-black hover:-translate-y-1 transition-transform duration-200">
                 <img src={starIcon} alt="Quem somos" className="w-4 h-4 mr-2" />
                 Quem somos
               </Button>
@@ -79,13 +79,11 @@ export const Footer = () => {
                 @movimentolerparaser
               </a>
               <a 
-                href="https://linktr.ee/movimentolerparaser"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:movimelerparaser@gmail.com"
                 className="flex items-center gap-3 font-nunito text-background/80 hover:text-primary transition-colors"
               >
-                <ExternalLink className="w-4 h-4" />
-                Linktree
+                <Mail className="w-4 h-4" />
+                movimelerparaser@gmail.com
               </a>
             </div>
             
@@ -104,7 +102,7 @@ export const Footer = () => {
               "Formar através da leitura. Transformar através da arte."
             </p>
             <p className="font-nunito text-background/60 text-sm">
-              © 2024 Movimento Ler para Ser. Todos os direitos reservados.
+              © {new Date().getFullYear()} Movimento Ler para Ser. Todos os direitos reservados.
             </p>
             <p className="font-nunito text-background/60 text-sm mt-2">
               Alinhado com a Agenda 2030 da ONU para o desenvolvimento sustentável.
