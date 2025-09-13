@@ -23,7 +23,7 @@ export const Header = () => {
             <img 
               src={logoMovimento} 
               alt="Movimento Ler para Ser" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </div>
 
