@@ -43,6 +43,9 @@ All colors MUST be HSL.
     --brand-pink: 318 86% 56%; /* #F26DC3 */
     --brand-orange: 14 82% 53%; /* #EC5C22 */
 
+    /* Custom beige for media section */
+    --media-bg: 44 65% 91%; /* #F4E9D5 */
+
     --muted: 38 51% 72%;
     --muted-foreground: 19 42% 40%;
 
