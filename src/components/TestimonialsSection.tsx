@@ -16,7 +16,7 @@ export const TestimonialsSection = () => {
 
   return (
     <section className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
             Depoimentos
@@ -26,20 +26,20 @@ export const TestimonialsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-background rounded-xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
-              <div className="text-center mb-4">
+            <div key={testimonial.id} className="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 min-h-[600px] flex flex-col">
+              <div className="text-center mb-6">
                 <div className="text-4xl mb-4">💬</div>
-                <h3 className="font-gothic text-lg font-bold text-foreground uppercase mb-4">
+                <h3 className="font-gothic text-lg font-bold text-foreground uppercase mb-6">
                   {testimonial.title}
                 </h3>
               </div>
               
-              <div className="bg-secondary/20 rounded-lg overflow-hidden">
+              <div className="bg-secondary/20 rounded-lg overflow-hidden flex-1 mb-6">
                 <iframe
                   src={`https://www.instagram.com/p/${testimonial.id}/embed/`}
-                  className="w-full h-[500px] border-0"
+                  className="w-full h-[450px] border-0"
                   scrolling="no"
                   frameBorder="0"
                   allow="encrypted-media"
@@ -47,8 +47,8 @@ export const TestimonialsSection = () => {
                 />
               </div>
               
-              <div className="text-center">
-                <p className="font-script text-accent italic">
+              <div className="text-center mt-auto">
+                <p className="font-script text-accent italic text-lg">
                   "O impacto é real e transformador"
                 </p>
               </div>
