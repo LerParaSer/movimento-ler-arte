@@ -43,7 +43,7 @@ export const MediaSection = () => {
                 </p>
               </div>
               
-              <div className="bg-secondary rounded-lg p-6 mb-6">
+              <div className="rounded-lg p-6 mb-6" style={{backgroundColor: '#F4E9D5'}}>
                 <div className="aspect-video rounded-lg overflow-hidden mb-4">
                   <iframe
                     src={interview.url.replace('watch?v=', 'embed/').replace('&t=159s', '?start=159')}
