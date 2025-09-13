@@ -36,10 +36,10 @@ export const TestimonialsSection = () => {
                 </h3>
               </div>
               
-              <div className="bg-secondary/20 rounded-lg p-4 mb-4">
+              <div className="bg-secondary/20 rounded-lg overflow-hidden">
                 <iframe
                   src={`https://www.instagram.com/p/${testimonial.id}/embed/`}
-                  className="w-full h-96 border-0"
+                  className="w-full h-[500px] border-0"
                   scrolling="no"
                   frameBorder="0"
                   allow="encrypted-media"

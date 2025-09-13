@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -5,6 +6,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import projeto1 from "@/assets/projects/projeto-1.jpg";
 import projeto2 from "@/assets/projects/projeto-2.jpg";
 import projeto3 from "@/assets/projects/projeto-3.jpg";
@@ -17,6 +24,7 @@ import projeto9 from "@/assets/projects/projeto-9.jpg";
 import projeto10 from "@/assets/projects/projeto-10.jpg";
 
 export const ProjectsSection = () => {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; title: string } | null>(null);
   const projectsGroup1 = [
     {
       id: 1,
@@ -98,7 +106,10 @@ export const ProjectsSection = () => {
               <CarouselContent className="-ml-4">
                 {projectsGroup1.map((project) => (
                   <CarouselItem key={project.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                    <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div 
+                      className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+                      onClick={() => setSelectedImage({ src: project.image, title: project.title })}
+                    >
                       <div className="overflow-hidden">
                         <img 
                           src={project.image} 
@@ -124,7 +135,10 @@ export const ProjectsSection = () => {
               <CarouselContent className="-ml-4">
                 {projectsGroup2.map((project) => (
                   <CarouselItem key={project.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                    <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div 
+                      className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+                      onClick={() => setSelectedImage({ src: project.image, title: project.title })}
+                    >
                       <div className="overflow-hidden">
                         <img 
                           src={project.image} 
@@ -158,6 +172,26 @@ export const ProjectsSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal para visualizar imagem completa */}
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-4xl w-full p-0">
+          <DialogHeader className="p-6 pb-0">
+            <DialogTitle className="font-gothic text-xl font-bold text-foreground uppercase">
+              {selectedImage?.title}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="p-6 pt-4">
+            {selectedImage && (
+              <img 
+                src={selectedImage.src} 
+                alt={selectedImage.title}
+                className="w-full h-auto rounded-lg object-contain max-h-[70vh]"
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
