@@ -30,7 +30,7 @@ export const MediaSection = () => {
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {interviews.map((interview, index) => (
-            <div key={index} className="bg-secondary/20 rounded-xl p-6 hover:shadow-xl transition-all hover:-translate-y-2">
+            <div key={index} className="bg-white rounded-xl p-6 hover:shadow-xl transition-all hover:-translate-y-2">
               <div className="text-center mb-6">
                 <div className="flex justify-center mb-4">
                   <img src={emailIcon} alt="Entrevista" className="w-12 h-12" />
