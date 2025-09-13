@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, ExternalLink } from "lucide-react";
-import searchIcon from "@/assets/graphics/search.png";
-import houseIcon from "@/assets/graphics/house.png";
+import buscaIcon from "@/assets/graphics/busca.png";
+import casaIcon from "@/assets/graphics/casa.png";
 import starIcon from "@/assets/graphics/star.png";
 
 export const Footer = () => {
@@ -20,11 +20,11 @@ export const Footer = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white">
-                <img src={searchIcon} alt="O que fazemos" className="w-4 h-4 mr-2" />
+                <img src={buscaIcon} alt="O que fazemos" className="w-4 h-4 mr-2" />
                 O que fazemos
               </Button>
               <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white">
-                <img src={houseIcon} alt="Como ajudar" className="w-4 h-4 mr-2" />
+                <img src={casaIcon} alt="Como ajudar" className="w-4 h-4 mr-2" />
                 Como ajudar
               </Button>
               <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white">
