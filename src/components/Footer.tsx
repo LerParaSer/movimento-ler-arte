@@ -1,9 +1,5 @@
 import { Button } from "@/components/ui/button";
-import searchIcon from "@/assets/graphics/search.png";
-import houseIcon from "@/assets/graphics/house.png";
-import starIcon from "@/assets/graphics/star.png";
-import atIcon from "@/assets/graphics/at.png";
-import emailIcon from "@/assets/graphics/email.png";
+import { Search, Home, Star, Instagram, ExternalLink } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -20,16 +16,16 @@ export const Footer = () => {
               enriquecedoras a crianças em situação de vulnerabilidade.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button variant="outline" size="sm" className="border-background text-background hover:bg-background hover:text-foreground">
-                <img src={searchIcon} alt="O que fazemos" className="w-4 h-4 mr-2" />
+              <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white">
+                <Search className="w-4 h-4 mr-2" />
                 O que fazemos
               </Button>
-              <Button variant="outline" size="sm" className="border-background text-background hover:bg-background hover:text-foreground">
-                <img src={houseIcon} alt="Como ajudar" className="w-4 h-4 mr-2" />
+              <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white">
+                <Home className="w-4 h-4 mr-2" />
                 Como ajudar
               </Button>
-              <Button variant="outline" size="sm" className="border-background text-background hover:bg-background hover:text-foreground">
-                <img src={starIcon} alt="Quem somos" className="w-4 h-4 mr-2" />
+              <Button variant="outline" size="sm" className="border-black text-black hover:bg-black hover:text-white">
+                <Star className="w-4 h-4 mr-2" />
                 Quem somos
               </Button>
             </div>
@@ -76,7 +72,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 font-nunito text-background/80 hover:text-primary transition-colors"
               >
-                <img src={atIcon} alt="Instagram" className="w-4 h-4" />
+                <Instagram className="w-4 h-4" />
                 @movimentolerparaser
               </a>
               <a 
@@ -85,7 +81,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 font-nunito text-background/80 hover:text-primary transition-colors"
               >
-                <img src={emailIcon} alt="Linktree" className="w-4 h-4" />
+                <ExternalLink className="w-4 h-4" />
                 Linktree
               </a>
             </div>
