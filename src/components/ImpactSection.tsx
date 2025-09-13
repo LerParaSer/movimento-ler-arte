@@ -22,7 +22,7 @@ export const ImpactSection = () => {
         
         {/* Atividades */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          <div className="bg-background rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+          <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-4">
               <img src={childReadingIcon} alt="Rodas de leitura" className="w-12 h-12" />
             </div>
@@ -34,7 +34,7 @@ export const ImpactSection = () => {
             </p>
           </div>
           
-          <div className="bg-background rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+          <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-4">
               <img src={starIcon} alt="Oficinas artísticas" className="w-12 h-12" />
             </div>
@@ -46,7 +46,7 @@ export const ImpactSection = () => {
             </p>
           </div>
           
-          <div className="bg-background rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+          <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-4">
               <img src={booksIcon} alt="Diversidade de títulos" className="w-12 h-12" />
             </div>
@@ -58,7 +58,7 @@ export const ImpactSection = () => {
             </p>
           </div>
           
-          <div className="bg-background rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+          <div className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-4">
               <img src={volunteerHandsIcon} alt="Campanhas de arrecadação" className="w-12 h-12" />
             </div>
