@@ -1,10 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logoMovimento from "@/assets/logo-movimento.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroHeight = window.innerHeight * 0.95; // 95vh
+      setIsScrolled(window.scrollY > heroHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const menuItems = [
     { href: "#sobre", label: "Sobre" },
@@ -15,7 +26,9 @@ export const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-border shadow-lg">
+    <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-border shadow-lg transition-all duration-300 ${
+      isScrolled ? 'bg-transparent' : 'bg-white/90'
+    }`}>
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
