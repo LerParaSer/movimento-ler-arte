@@ -48,7 +48,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+      <div className="relative z-10 container mx-auto px-4 py-20 pt-28 lg:pt-20 text-center">
         <h1 className="font-gothic text-4xl md:text-5xl lg:text-7xl font-bold text-white uppercase tracking-wide leading-tight mb-6 drop-shadow-2xl">
           Formar através da <span className="text-primary">leitura.</span><br />
           Transformar através da <span className="text-accent">arte.</span>
