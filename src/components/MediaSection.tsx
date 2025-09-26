@@ -20,10 +20,10 @@ export const MediaSection = () => {
     <section className="py-20" style={{backgroundColor: '#F4E9D5'}}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-black uppercase tracking-wide mb-6">
+          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
             Na Mídia
           </h2>
-          <p className="font-nunito text-xl text-black mb-8">
+          <p className="font-nunito text-xl text-foreground mb-8">
             Entrevistas que mostram nossa história e impacto
           </p>
         </div>
@@ -35,10 +35,10 @@ export const MediaSection = () => {
                 <div className="flex justify-center mb-4">
                   <img src={emailIcon} alt="Entrevista" className="w-12 h-12" />
                 </div>
-                <h3 className="font-gothic text-2xl font-bold text-black uppercase tracking-wide mb-2">
+                <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-2">
                   {interview.title}
                 </h3>
-                <p className="font-nunito text-black mb-4">
+                <p className="font-nunito text-foreground mb-4">
                   {interview.description}
                 </p>
               </div>
@@ -56,7 +56,7 @@ export const MediaSection = () => {
                 </div>
                 
                 <div className="text-center">
-                  <p className="font-nunito font-semibold text-black mb-2">
+                  <p className="font-nunito font-semibold text-foreground mb-2">
                     {interview.presenter}
                   </p>
                   <a 

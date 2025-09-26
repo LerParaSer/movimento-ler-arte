@@ -8,7 +8,7 @@ export const ContributeSection = () => {
     <section id="contribuir" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-black uppercase tracking-wide mb-6">
+          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
             Como Contribuir
           </h2>
           <p className="font-script text-4xl lg:text-5xl text-accent mb-8">
@@ -21,10 +21,10 @@ export const ContributeSection = () => {
             <div className="flex justify-center mb-6">
               <img src={plusIcon} alt="Voluntariado" className="w-16 h-16" />
             </div>
-            <h3 className="font-gothic text-2xl font-bold text-black uppercase tracking-wide mb-4">
+            <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-4">
               Voluntariado
             </h3>
-            <p className="font-nunito text-black mb-6">
+            <p className="font-nunito text-foreground mb-6">
               Participe das rodas de leitura e oficinas. Sua presença e energia fazem toda a diferença 
               na vida das crianças.
             </p>
@@ -42,10 +42,10 @@ export const ContributeSection = () => {
             <div className="flex justify-center mb-6">
               <img src={bookReadingIcon} alt="Doações de livros" className="w-16 h-16" />
             </div>
-            <h3 className="font-gothic text-2xl font-bold text-black uppercase tracking-wide mb-4">
+            <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-4">
               Doações
             </h3>
-            <p className="font-nunito text-black mb-6">
+            <p className="font-nunito text-foreground mb-6">
               Contribua com livros novos ou usados. Cada livro doado pode transformar a vida de uma criança.
             </p>
             <Button 
@@ -62,10 +62,10 @@ export const ContributeSection = () => {
             <div className="flex justify-center mb-6">
               <img src={houseIcon} alt="Parcerias" className="w-16 h-16" />
             </div>
-            <h3 className="font-gothic text-2xl font-bold text-black uppercase tracking-wide mb-4">
+            <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-4">
               Parcerias
             </h3>
-            <p className="font-nunito text-black mb-6">
+            <p className="font-nunito text-foreground mb-6">
               Sua empresa pode apoiar campanhas e projetos sociais. Juntos, amplificamos o impacto.
             </p>
             <Button 
@@ -82,10 +82,10 @@ export const ContributeSection = () => {
         {/* Call to Action Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-secondary/20 rounded-xl p-6 text-center">
-            <h4 className="font-gothic text-xl font-bold text-black uppercase mb-4">
+            <h4 className="font-gothic text-xl font-bold text-foreground uppercase mb-4">
               Para Instituições e Parcerias
             </h4>
-            <p className="font-nunito text-black mb-6">
+            <p className="font-nunito text-foreground mb-6">
               Preencha nosso formulário e vamos conversar sobre como podemos trabalhar juntos.
             </p>
             <Button 
@@ -99,10 +99,10 @@ export const ContributeSection = () => {
           </div>
           
           <div className="bg-secondary/20 rounded-xl p-6 text-center">
-            <h4 className="font-gothic text-xl font-bold text-black uppercase mb-4">
+            <h4 className="font-gothic text-xl font-bold text-foreground uppercase mb-4">
               Amigos do Movimento
             </h4>
-            <p className="font-nunito text-black mb-6">
+            <p className="font-nunito text-foreground mb-6">
               Junte-se ao nosso grupo no WhatsApp e fique por dentro de todas as novidades.
             </p>
             <Button 

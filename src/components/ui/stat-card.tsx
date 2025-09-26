@@ -13,7 +13,7 @@ const colorVariants = {
   green: "bg-primary text-primary-foreground",
   purple: "bg-accent text-accent-foreground", 
   blue: "bg-brand-blue text-white",
-  yellow: "bg-brand-yellow text-black",
+  yellow: "bg-brand-yellow text-foreground",
   pink: "bg-brand-pink text-white",
   orange: "bg-brand-orange text-white",
 };

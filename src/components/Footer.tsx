@@ -19,15 +19,15 @@ export const Footer = () => {
               enriquecedoras a crianças em situação de vulnerabilidade.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="outline" size="sm" className="border-black text-black hover:-translate-y-1 hover:bg-white hover:text-black hover:border-black transition-all duration-200">
+              <Button variant="outline" size="sm" className="border-foreground text-foreground hover:-translate-y-1 hover:bg-background hover:text-foreground hover:border-foreground transition-all duration-200">
                 <img src={buscaIcon} alt="O que fazemos" className="w-4 h-4 mr-2" />
                 O que fazemos
               </Button>
-              <Button variant="outline" size="sm" className="border-black text-black hover:-translate-y-1 hover:bg-white hover:text-black hover:border-black transition-all duration-200">
+              <Button variant="outline" size="sm" className="border-foreground text-foreground hover:-translate-y-1 hover:bg-background hover:text-foreground hover:border-foreground transition-all duration-200">
                 <img src={casaIcon} alt="Como ajudar" className="w-4 h-4 mr-2" />
                 Como ajudar
               </Button>
-              <Button variant="outline" size="sm" className="border-black text-black hover:-translate-y-1 hover:bg-white hover:text-black hover:border-black transition-all duration-200">
+              <Button variant="outline" size="sm" className="border-foreground text-foreground hover:-translate-y-1 hover:bg-background hover:text-foreground hover:border-foreground transition-all duration-200">
                 <img src={starIcon} alt="Quem somos" className="w-4 h-4 mr-2" />
                 Quem somos
               </Button>

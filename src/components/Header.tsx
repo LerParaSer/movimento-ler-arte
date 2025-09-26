@@ -46,7 +46,7 @@ export const Header = () => {
               <a 
                 key={item.href}
                 href={item.href} 
-                className="font-nunito text-black hover:text-primary transition-colors duration-200 relative group"
+                className="font-nunito text-foreground hover:text-primary transition-colors duration-200 relative group"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
@@ -80,7 +80,7 @@ export const Header = () => {
                 <a 
                   key={item.href}
                   href={item.href} 
-                  className="font-nunito text-black hover:text-primary transition-colors py-2"
+                  className="font-nunito text-foreground hover:text-primary transition-colors py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
