@@ -36,25 +36,17 @@ export const TestimonialsSection = () => {
                 </h3>
               </div>
               
-              <div className="bg-secondary/20 rounded-lg p-8 flex-1 mb-6 flex flex-col items-center justify-center min-h-[450px]">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">📸</div>
-                  <h4 className="font-gothic text-xl font-bold text-black uppercase mb-4">
-                    Ver no Instagram
-                  </h4>
-                  <p className="font-nunito text-black mb-6">
-                    Clique para ver este depoimento completo no Instagram
-                  </p>
-                  <a 
-                    href={`https://www.instagram.com/p/${testimonial.id}/`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-nunito font-medium hover:bg-primary/90 transition-colors"
-                  >
-                    <span>📱</span>
-                    Ver Post
-                  </a>
-                </div>
+              <div className="bg-secondary/20 rounded-lg overflow-hidden flex-1 mb-6">
+                <iframe
+                  src={`https://cdn.iframe.ly/api/iframe?url=https://www.instagram.com/p/${testimonial.id}/&key=b9d60c854c7bda78849710ed5a6ad41b`}
+                  className="w-full h-[450px] border-0"
+                  scrolling="no"
+                  frameBorder="0"
+                  allow="encrypted-media; autoplay; clipboard-write"
+                  allowFullScreen
+                  title={testimonial.title}
+                  loading="lazy"
+                />
               </div>
               
               <div className="text-center mt-auto">
