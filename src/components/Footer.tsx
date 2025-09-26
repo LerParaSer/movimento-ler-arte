@@ -7,10 +7,10 @@ import starIcon from "@/assets/graphics/star.png";
 export const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-16">
-      <div className="container mx-auto px-4 text-center">
-        <div className="flex flex-col items-center gap-8 mb-12">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-8 mb-12 text-center lg:text-left">
           {/* Logo e Descrição */}
-          <div className="max-w-2xl">
+          <div className="lg:col-span-1 flex flex-col items-center lg:items-start">
             <h3 className="font-gothic text-3xl font-bold text-primary uppercase tracking-wide mb-4">
               Movimento Ler para Ser
             </h3>
@@ -18,7 +18,7 @@ export const Footer = () => {
               Democratizando o acesso à literatura e à arte, proporcionando experiências 
               enriquecedoras a crianças em situação de vulnerabilidade.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               <Button variant="outline" size="sm" className="border-foreground text-foreground hover:-translate-y-1 hover:bg-background hover:text-foreground hover:border-foreground transition-all duration-200">
                 <img src={buscaIcon} alt="O que fazemos" className="w-4 h-4 mr-2" />
                 O que fazemos
@@ -35,7 +35,7 @@ export const Footer = () => {
           </div>
           
           {/* Links Rápidos */}
-          <div>
+          <div className="flex flex-col items-center lg:items-start">
             <h4 className="font-gothic text-xl font-bold text-primary uppercase tracking-wide mb-4">
               Links Rápidos
             </h4>
@@ -64,11 +64,11 @@ export const Footer = () => {
           </div>
           
           {/* Contato e Redes */}
-          <div>
+          <div className="flex flex-col items-center lg:items-start">
             <h4 className="font-gothic text-xl font-bold text-primary uppercase tracking-wide mb-4">
               Redes Sociais
             </h4>
-            <div className="space-y-3 flex flex-col items-center">
+            <div className="space-y-3 flex flex-col items-center lg:items-start">
               <a 
                 href="https://www.instagram.com/movimentolerparaser/"
                 target="_blank"
@@ -88,7 +88,7 @@ export const Footer = () => {
             </div>
             
             <div className="mt-6">
-              <Button variant="default" size="lg" className="w-full max-w-xs">
+              <Button variant="default" size="lg" className="w-full lg:w-auto max-w-xs">
                 Apoiar o Movimento
               </Button>
             </div>
