@@ -1,29 +1,4 @@
-import { useEffect } from "react";
-
-// Declaração de tipo para o Instagram embed
-declare global {
-  interface Window {
-    instgrm?: {
-      Embeds: {
-        process: () => void;
-      };
-    };
-  }
-}
-
 export const TestimonialsSection = () => {
-  useEffect(() => {
-    // Carrega o script do Instagram se ainda não foi carregado
-    if (!(window as any).instgrm) {
-      const script = document.createElement('script');
-      script.src = 'https://www.instagram.com/embed.js';
-      script.async = true;
-      document.body.appendChild(script);
-    } else {
-      // Se o script já existe, processa os embeds
-      (window as any).instgrm.Embeds.process();
-    }
-  }, []);
 
   const testimonials = [
     {
@@ -62,24 +37,37 @@ export const TestimonialsSection = () => {
                 </h3>
               </div>
               
-              <div className="bg-secondary/20 rounded-lg p-4 flex-1 mb-6">
-                <blockquote 
-                  className="instagram-media" 
-                  data-instgrm-permalink={`https://www.instagram.com/p/${testimonial.id}/`}
-                  data-instgrm-version="14"
-                  style={{
-                    background: '#FFF',
-                    border: '0',
-                    borderRadius: '3px',
-                    boxShadow: '0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)',
-                    margin: '1px',
-                    maxWidth: '540px',
-                    minWidth: '326px',
-                    padding: '0',
-                    width: '99.375%'
-                  }}
-                >
-                </blockquote>
+              <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg p-8 flex-1 mb-6 text-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-black/20"></div>
+                <div className="relative z-10 text-center">
+                  <div className="text-5xl mb-4">📸</div>
+                  <h4 className="font-gothic text-xl font-bold uppercase mb-4">
+                    {testimonial.title}
+                  </h4>
+                  <p className="font-nunito mb-6 opacity-90">
+                    Assista ao depoimento completo no Instagram
+                  </p>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 mb-6">
+                    <div className="flex items-center justify-center gap-3 mb-3">
+                      <div className="w-8 h-8 bg-white/30 rounded-full flex items-center justify-center">
+                        <span className="text-sm">📱</span>
+                      </div>
+                      <span className="font-semibold">@movimentolerparaser</span>
+                    </div>
+                    <div className="text-sm opacity-80">
+                      Post ID: {testimonial.id}
+                    </div>
+                  </div>
+                  <a 
+                    href={`https://www.instagram.com/p/${testimonial.id}/`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-white text-purple-600 px-6 py-3 rounded-lg font-nunito font-semibold hover:bg-white/90 transition-colors"
+                  >
+                    <span>▶️</span>
+                    Ver Depoimento
+                  </a>
+                </div>
               </div>
               
               <div className="text-center mt-auto">
