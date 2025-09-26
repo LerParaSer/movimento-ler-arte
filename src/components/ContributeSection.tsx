@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import plusIcon from "@/assets/graphics/plus.png";
+import iconVoluntario from "@/assets/graphics/icon-voluntario.png";
 import bookReadingIcon from "@/assets/graphics/book-reading.png";
 import houseIcon from "@/assets/graphics/house.png";
 
@@ -19,7 +19,7 @@ export const ContributeSection = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 text-center border border-primary/20 hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-6">
-              <img src={plusIcon} alt="Voluntariado" className="w-16 h-16" />
+              <img src={iconVoluntario} alt="Voluntariado" className="w-16 h-16" />
             </div>
             <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-4">
               Voluntariado
