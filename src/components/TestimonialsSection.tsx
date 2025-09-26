@@ -38,12 +38,14 @@ export const TestimonialsSection = () => {
               
               <div className="bg-secondary/20 rounded-lg overflow-hidden flex-1 mb-6">
                 <iframe
-                  src={`https://www.instagram.com/p/${testimonial.id}/embed/`}
+                  src={`https://www.instagram.com/p/${testimonial.id}/embed/?cr=1&v=7&wp=540&rd=https%3A%2F%2Fdeveloper.instagram.com&rp=%2Fdocs%2Fembeds#%7B%22ci%22%3A0%2C%22os%22%3A0%7D`}
                   className="w-full h-[450px] border-0"
                   scrolling="no"
                   frameBorder="0"
                   allow="encrypted-media"
+                  allowFullScreen
                   title={testimonial.title}
+                  loading="lazy"
                 />
               </div>
               
