@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom font */
+@font-face {
+  font-family: 'Learning Curve';
+  src: url('/fonts/LearningCurve.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
