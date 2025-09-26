@@ -22,7 +22,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section className="h-screen relative overflow-hidden flex items-center justify-center">
+    <section className="h-screen relative overflow-hidden flex items-center justify-center pt-20">
       {/* Background Carousel */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
@@ -39,8 +39,6 @@ export const HeroSection = () => {
             />
           </div>
         ))}
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Carousel Dots */}
