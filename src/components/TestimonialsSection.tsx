@@ -1,4 +1,30 @@
+import { useEffect } from "react";
+
+// Declaração de tipo para o Instagram embed
+declare global {
+  interface Window {
+    instgrm?: {
+      Embeds: {
+        process: () => void;
+      };
+    };
+  }
+}
+
 export const TestimonialsSection = () => {
+  useEffect(() => {
+    // Carrega o script do Instagram se ainda não foi carregado
+    if (!(window as any).instgrm) {
+      const script = document.createElement('script');
+      script.src = 'https://www.instagram.com/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    } else {
+      // Se o script já existe, processa os embeds
+      (window as any).instgrm.Embeds.process();
+    }
+  }, []);
+
   const testimonials = [
     {
       id: "C9ztxgNujnu",
@@ -36,17 +62,24 @@ export const TestimonialsSection = () => {
                 </h3>
               </div>
               
-              <div className="bg-secondary/20 rounded-lg overflow-hidden flex-1 mb-6">
-                <iframe
-                  src={`https://cdn.iframe.ly/api/iframe?url=https://www.instagram.com/p/${testimonial.id}/&key=b9d60c854c7bda78849710ed5a6ad41b`}
-                  className="w-full h-[450px] border-0"
-                  scrolling="no"
-                  frameBorder="0"
-                  allow="encrypted-media; autoplay; clipboard-write"
-                  allowFullScreen
-                  title={testimonial.title}
-                  loading="lazy"
-                />
+              <div className="bg-secondary/20 rounded-lg p-4 flex-1 mb-6">
+                <blockquote 
+                  className="instagram-media" 
+                  data-instgrm-permalink={`https://www.instagram.com/p/${testimonial.id}/`}
+                  data-instgrm-version="14"
+                  style={{
+                    background: '#FFF',
+                    border: '0',
+                    borderRadius: '3px',
+                    boxShadow: '0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)',
+                    margin: '1px',
+                    maxWidth: '540px',
+                    minWidth: '326px',
+                    padding: '0',
+                    width: '99.375%'
+                  }}
+                >
+                </blockquote>
               </div>
               
               <div className="text-center mt-auto">
