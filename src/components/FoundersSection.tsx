@@ -22,7 +22,7 @@ export const FoundersSection = () => {
                 Danieli Rosa
               </h3>
               <div className="font-nunito text-primary font-semibold mb-4">
-                Advogada, Professora Universitária, Mestre e Doutoranda em Literatura
+                Escritora, mestre em crítica literária e doutoranda em literatura, arte e outras culturas
               </div>
             </div>
             
