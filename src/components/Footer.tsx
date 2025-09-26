@@ -8,9 +8,9 @@ export const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-16">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:justify-between mb-12 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 mb-12 text-center lg:text-left">
           {/* Logo e Descrição */}
-          <div className="lg:col-span-1 flex flex-col items-center lg:items-start">
+          <div className="flex-1 lg:max-w-sm flex flex-col items-center lg:items-start">
             <h3 className="font-gothic text-3xl font-bold text-primary uppercase tracking-wide mb-4">
               Movimento Ler para Ser
             </h3>
@@ -35,7 +35,7 @@ export const Footer = () => {
           </div>
           
           {/* Links Rápidos */}
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex-1 lg:max-w-xs flex flex-col items-center lg:items-start">
             <h4 className="font-gothic text-xl font-bold text-primary uppercase tracking-wide mb-4">
               Links Rápidos
             </h4>
@@ -64,7 +64,7 @@ export const Footer = () => {
           </div>
           
           {/* Contato e Redes */}
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex-1 lg:max-w-xs flex flex-col items-center lg:items-start">
             <h4 className="font-gothic text-xl font-bold text-primary uppercase tracking-wide mb-4">
               Redes Sociais
             </h4>
