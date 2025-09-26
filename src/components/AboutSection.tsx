@@ -18,7 +18,7 @@ export const AboutSection = () => {
             </p>
             
             <p className="text-foreground font-medium text-xl lg:text-2xl">
-              Nossa missão é clara: <span className="font-script text-accent text-4xl lg:text-5xl">"formar através da leitura e da arte"</span>, 
+              Nossa missão é clara: <span className="font-script text-foreground text-4xl lg:text-5xl">"formar através da leitura e da arte"</span>, 
               sem assistencialismo, mas com foco no desenvolvimento humano, na criatividade 
               e no alinhamento com a Agenda 2030 da ONU.
             </p>
