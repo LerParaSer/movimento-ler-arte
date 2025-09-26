@@ -22,7 +22,7 @@ export const TestimonialsSection = () => {
           <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
             Depoimentos
           </h2>
-          <p className="font-script text-4xl lg:text-5xl text-accent mb-8">
+          <p className="font-script text-4xl lg:text-5xl text-foreground mb-8">
             "Veja o que instituições parceiras dizem sobre o impacto do movimento"
           </p>
         </div>
