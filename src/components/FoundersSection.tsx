@@ -33,7 +33,7 @@ export const FoundersSection = () => {
                 e pelo compromisso com a educação transformadora.
               </p>
               <div className="bg-background rounded-xl p-4 border-l-4 border-primary">
-                <p className="font-script text-lg text-primary italic">
+                <p className="font-script text-2xl text-primary italic">
                   "A literatura tem o poder de abrir mundos e transformar realidades"
                 </p>
               </div>
@@ -61,7 +61,7 @@ export const FoundersSection = () => {
                 transformação através da leitura e da arte.
               </p>
               <div className="bg-background rounded-xl p-4 border-l-4 border-accent">
-                <p className="font-script text-lg text-accent italic">
+                <p className="font-script text-2xl text-accent italic">
                   "Cada criança merece ter acesso ao poder transformador dos livros"
                 </p>
               </div>

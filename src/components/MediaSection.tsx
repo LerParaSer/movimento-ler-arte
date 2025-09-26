@@ -71,7 +71,7 @@ export const MediaSection = () => {
               </div>
               
               <div className="text-center">
-                <p className="font-script text-accent italic text-sm">
+                <p className="font-script text-accent italic text-base">
                   "Conheça as pessoas por trás da transformação"
                 </p>
               </div>

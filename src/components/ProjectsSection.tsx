@@ -88,7 +88,7 @@ export const ProjectsSection = () => {
           <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
             Projetos Realizados
           </h2>
-          <p className="font-script text-2xl lg:text-3xl text-accent mb-8">
+          <p className="font-script text-4xl lg:text-5xl text-accent mb-8">
             "Momentos que transformam vidas através da leitura e da arte"
           </p>
           <p className="font-nunito text-lg text-muted-foreground max-w-3xl mx-auto">

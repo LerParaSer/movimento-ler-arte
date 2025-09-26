@@ -11,7 +11,7 @@ export const ContributeSection = () => {
           <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
             Como Contribuir
           </h2>
-          <p className="font-script text-2xl lg:text-3xl text-accent mb-8">
+          <p className="font-script text-4xl lg:text-5xl text-accent mb-8">
             "Você pode fazer parte dessa transformação!"
           </p>
         </div>

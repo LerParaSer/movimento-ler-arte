@@ -98,7 +98,7 @@ export const Footer = () => {
         {/* Linha divisória */}
         <div className="border-t border-background/20 pt-8">
           <div className="text-center">
-            <p className="font-script text-2xl text-accent mb-4">
+            <p className="font-script text-4xl text-accent mb-4">
               "Formar através da leitura. Transformar através da arte."
             </p>
             <p className="font-nunito text-background/60 text-sm">
