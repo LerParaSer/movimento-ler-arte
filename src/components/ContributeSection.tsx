@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import iconVoluntario from "@/assets/graphics/icon-voluntario.png";
 import iconDoacoes from "@/assets/graphics/icon-doacoes.png";
-import houseIcon from "@/assets/graphics/house.png";
+import iconParcerias from "@/assets/graphics/icon-parcerias.png";
 
 export const ContributeSection = () => {
   return (
@@ -60,7 +60,7 @@ export const ContributeSection = () => {
           
           <div className="bg-gradient-to-br from-brand-blue/10 to-brand-blue/5 rounded-2xl p-8 text-center border border-brand-blue/20 hover:shadow-xl transition-all hover:-translate-y-2">
             <div className="flex justify-center mb-6">
-              <img src={houseIcon} alt="Parcerias" className="w-16 h-16" />
+              <img src={iconParcerias} alt="Parcerias" className="w-16 h-16" />
             </div>
             <h3 className="font-gothic text-2xl font-bold text-foreground uppercase tracking-wide mb-4">
               Parcerias
