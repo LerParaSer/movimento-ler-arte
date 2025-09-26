@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 mb-12 text-center lg:text-left">
           {/* Logo e Descrição */}
-          <div className="flex-1 lg:max-w-sm flex flex-col items-center lg:items-start">
+          <div className="lg:w-2/5 flex flex-col items-center lg:items-start">
             <h3 className="font-gothic text-3xl font-bold text-primary uppercase tracking-wide mb-4">
               Movimento Ler para Ser
             </h3>
@@ -35,7 +35,7 @@ export const Footer = () => {
           </div>
           
           {/* Links Rápidos */}
-          <div className="flex-1 lg:max-w-xs flex flex-col items-center lg:items-start">
+          <div className="lg:w-1/5 flex flex-col items-center lg:items-start">
             <h4 className="font-gothic text-xl font-bold text-primary uppercase tracking-wide mb-4">
               Links Rápidos
             </h4>
@@ -64,7 +64,7 @@ export const Footer = () => {
           </div>
           
           {/* Contato e Redes */}
-          <div className="flex-1 lg:max-w-xs flex flex-col items-center lg:items-start">
+          <div className="lg:w-1/5 flex flex-col items-center lg:items-start">
             <h4 className="font-gothic text-xl font-bold text-primary uppercase tracking-wide mb-4">
               Redes Sociais
             </h4>
