@@ -16,7 +16,7 @@ export default {
       fontFamily: {
         'gothic': ['League Gothic', 'sans-serif'],
         'nunito': ['Nunito', 'sans-serif'],
-        'script': ['Kalam', 'cursive'], // Using Kalam as Learning Curve alternative
+        'script': ['Learning Curve', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
