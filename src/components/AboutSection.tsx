@@ -13,7 +13,7 @@ export const AboutSection = () => {
           
           <div className="font-nunito text-lg lg:text-xl text-foreground leading-relaxed space-y-6">
             <p>
-              O Movimento Ler para Ser nasceu para <span className="text-primary font-semibold">democratizar o acesso à literatura e à arte</span>, 
+              O Movimento Ler para Ser nasceu para <span className="text-foreground font-semibold">democratizar o acesso à literatura e à arte</span>, 
               proporcionando experiências enriquecedoras a crianças em situação de vulnerabilidade.
             </p>
             
