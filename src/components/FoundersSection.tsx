@@ -3,10 +3,10 @@ export const FoundersSection = () => {
     <section id="quem-somos" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
+          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-black uppercase tracking-wide mb-6">
             Quem Somos
           </h2>
-          <p className="font-nunito text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="font-nunito text-xl text-black max-w-3xl mx-auto">
             Fundado por duas mulheres apaixonadas pela literatura e pela educação
           </p>
         </div>
@@ -18,7 +18,7 @@ export const FoundersSection = () => {
               <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold">
                 DR
               </div>
-              <h3 className="font-gothic text-3xl font-bold text-foreground uppercase tracking-wide mb-2">
+              <h3 className="font-gothic text-3xl font-bold text-black uppercase tracking-wide mb-2">
                 Danieli Rosa
               </h3>
               <div className="font-nunito text-primary font-semibold mb-4">
@@ -26,7 +26,7 @@ export const FoundersSection = () => {
               </div>
             </div>
             
-            <div className="space-y-4 font-nunito text-muted-foreground">
+            <div className="space-y-4 font-nunito text-black">
               <p>
                 Desde cedo, encontrou nos livros e na poesia a inspiração para transformar vidas. 
                 Sua trajetória acadêmica e profissional é marcada pela paixão pela literatura 
@@ -46,7 +46,7 @@ export const FoundersSection = () => {
               <div className="w-32 h-32 bg-gradient-to-br from-accent to-brand-blue rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold">
                 MP
               </div>
-              <h3 className="font-gothic text-3xl font-bold text-foreground uppercase tracking-wide mb-2">
+              <h3 className="font-gothic text-3xl font-bold text-black uppercase tracking-wide mb-2">
                 Melissa Pomi
               </h3>
               <div className="font-nunito text-accent font-semibold mb-4">
@@ -54,7 +54,7 @@ export const FoundersSection = () => {
               </div>
             </div>
             
-            <div className="space-y-4 font-nunito text-muted-foreground">
+            <div className="space-y-4 font-nunito text-black">
               <p>
                 Descobriu na literatura uma ferramenta poderosa ao acompanhar o desenvolvimento 
                 dos próprios filhos. Hoje, atua para que mais crianças vivenciem essa mesma 

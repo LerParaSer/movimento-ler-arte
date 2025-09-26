@@ -18,7 +18,7 @@ export const TestimonialsSection = () => {
     <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
+          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-black uppercase tracking-wide mb-6">
             Depoimentos
           </h2>
           <p className="font-script text-4xl lg:text-5xl text-accent mb-8">
@@ -31,7 +31,7 @@ export const TestimonialsSection = () => {
             <div key={testimonial.id} className="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 min-h-[600px] flex flex-col">
               <div className="text-center mb-6">
                 <div className="text-4xl mb-4">💬</div>
-                <h3 className="font-gothic text-lg font-bold text-foreground uppercase mb-6">
+                <h3 className="font-gothic text-lg font-bold text-black uppercase mb-6">
                   {testimonial.title}
                 </h3>
               </div>
@@ -57,7 +57,7 @@ export const TestimonialsSection = () => {
         </div>
         
         <div className="text-center mt-12">
-          <p className="font-nunito text-muted-foreground mb-6">
+          <p className="font-nunito text-black mb-6">
             Acompanhe mais depoimentos e histórias inspiradoras em nossas redes sociais
           </p>
           <a 

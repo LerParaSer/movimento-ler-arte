@@ -85,13 +85,13 @@ export const ProjectsSection = () => {
     <section id="projetos" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
+          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-black uppercase tracking-wide mb-6">
             Projetos Realizados
           </h2>
           <p className="font-script text-4xl lg:text-5xl text-accent mb-8">
             "Momentos que transformam vidas através da leitura e da arte"
           </p>
-          <p className="font-nunito text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="font-nunito text-lg text-black max-w-3xl mx-auto">
             Registros das nossas atividades nas escolas e instituições parceiras
           </p>
         </div>
@@ -99,7 +99,7 @@ export const ProjectsSection = () => {
         <div className="space-y-12">
           {/* Primeiro Carrossel */}
           <div className="relative">
-            <h3 className="font-gothic text-2xl font-bold text-foreground uppercase mb-6 text-center">
+            <h3 className="font-gothic text-2xl font-bold text-black uppercase mb-6 text-center">
               Rodas de Leitura e Atividades
             </h3>
             <Carousel className="w-full max-w-6xl mx-auto">
@@ -128,7 +128,7 @@ export const ProjectsSection = () => {
 
           {/* Segundo Carrossel */}
           <div className="relative">
-            <h3 className="font-gothic text-2xl font-bold text-foreground uppercase mb-6 text-center">
+            <h3 className="font-gothic text-2xl font-bold text-black uppercase mb-6 text-center">
               Oficinas Artísticas e Criatividade
             </h3>
             <Carousel className="w-full max-w-6xl mx-auto">
@@ -157,7 +157,7 @@ export const ProjectsSection = () => {
         </div>
         
         <div className="text-center mt-12">
-          <p className="font-nunito text-muted-foreground mb-6">
+          <p className="font-nunito text-black mb-6">
             Quer fazer parte dessa transformação? Entre em contato conosco!
           </p>
           <div className="inline-flex gap-4">
@@ -177,7 +177,7 @@ export const ProjectsSection = () => {
       <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
         <DialogContent className="max-w-4xl w-full p-0">
           <DialogHeader className="p-6 pb-0">
-            <DialogTitle className="font-gothic text-xl font-bold text-foreground uppercase">
+            <DialogTitle className="font-gothic text-xl font-bold text-black uppercase">
               {selectedImage?.title}
             </DialogTitle>
           </DialogHeader>

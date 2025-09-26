@@ -11,10 +11,10 @@ export const ImpactSection = () => {
     <section id="impacto" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
+          <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-black uppercase tracking-wide mb-6">
             Nossas Atividades e Impacto
           </h2>
-          <p className="font-nunito text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="font-nunito text-xl text-black max-w-4xl mx-auto">
             O Movimento Ler para Ser atua em escolas e instituições com atividades que 
             despertam o interesse pela leitura e estimulam a expressão artística
           </p>
@@ -26,10 +26,10 @@ export const ImpactSection = () => {
             <div className="flex justify-center mb-4">
               <img src={childReadingIcon} alt="Rodas de leitura" className="w-12 h-12" />
             </div>
-            <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
+            <h3 className="font-gothic text-xl font-bold text-black uppercase mb-3">
               Rodas de Leitura
             </h3>
-            <p className="font-nunito text-muted-foreground text-sm">
+            <p className="font-nunito text-black text-sm">
               Histórias que convidam à reflexão e ao desenvolvimento socioemocional
             </p>
           </div>
@@ -38,10 +38,10 @@ export const ImpactSection = () => {
             <div className="flex justify-center mb-4">
               <img src={starIcon} alt="Oficinas artísticas" className="w-12 h-12" />
             </div>
-            <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
+            <h3 className="font-gothic text-xl font-bold text-black uppercase mb-3">
               Oficinas Artísticas
             </h3>
-            <p className="font-nunito text-muted-foreground text-sm">
+            <p className="font-nunito text-black text-sm">
               Produção criativa de cartões-postais, desenhos e ilustrações
             </p>
           </div>
@@ -50,10 +50,10 @@ export const ImpactSection = () => {
             <div className="flex justify-center mb-4">
               <img src={booksIcon} alt="Diversidade de títulos" className="w-12 h-12" />
             </div>
-            <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
+            <h3 className="font-gothic text-xl font-bold text-black uppercase mb-3">
               Diversidade de Títulos
             </h3>
-            <p className="font-nunito text-muted-foreground text-sm">
+            <p className="font-nunito text-black text-sm">
               Livros novos e usados para escolha e troca entre crianças
             </p>
           </div>
@@ -62,10 +62,10 @@ export const ImpactSection = () => {
             <div className="flex justify-center mb-4">
               <img src={volunteerHandsIcon} alt="Campanhas de arrecadação" className="w-12 h-12" />
             </div>
-            <h3 className="font-gothic text-xl font-bold text-foreground uppercase mb-3">
+            <h3 className="font-gothic text-xl font-bold text-black uppercase mb-3">
               Campanhas de Arrecadação
             </h3>
-            <p className="font-nunito text-muted-foreground text-sm">
+            <p className="font-nunito text-black text-sm">
               Mobilização de livros em parceria com organizações e livrarias
             </p>
           </div>
@@ -73,10 +73,10 @@ export const ImpactSection = () => {
         
         {/* Resultados */}
         <div className="text-center mb-12">
-          <h3 className="font-gothic text-3xl lg:text-4xl font-bold text-foreground uppercase tracking-wide mb-4">
+          <h3 className="font-gothic text-3xl lg:text-4xl font-bold text-black uppercase tracking-wide mb-4">
             Resultados do 1º Ciclo
           </h3>
-          <p className="font-nunito text-lg text-muted-foreground mb-2">
+          <p className="font-nunito text-lg text-black mb-2">
             (desde Agosto/23)
           </p>
         </div>
