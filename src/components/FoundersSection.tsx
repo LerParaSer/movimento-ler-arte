@@ -1,3 +1,5 @@
+import danieliPhoto from "@/assets/founders/danieli-rosa.jpg";
+
 export const FoundersSection = () => {
   return (
     <section id="quem-somos" className="py-20 bg-background">
@@ -15,9 +17,11 @@ export const FoundersSection = () => {
           {/* Danieli Rosa */}
           <div className="bg-secondary/20 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div className="text-center mb-6">
-              <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold">
-                DR
-              </div>
+              <img 
+                src={danieliPhoto} 
+                alt="Danieli Rosa" 
+                className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
+              />
               <h3 className="font-gothic text-3xl font-bold text-foreground uppercase tracking-wide mb-2">
                 Danieli Rosa
               </h3>
