@@ -1,4 +1,5 @@
 import danieliPhoto from "@/assets/founders/danieli-rosa.jpg";
+import melissaPhoto from "@/assets/founders/melissa-pomi.jpg";
 
 export const FoundersSection = () => {
   return (
@@ -47,9 +48,11 @@ export const FoundersSection = () => {
           {/* Melissa Pomi */}
           <div className="bg-secondary/20 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div className="text-center mb-6">
-              <div className="w-32 h-32 bg-gradient-to-br from-accent to-brand-blue rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold">
-                MP
-              </div>
+              <img 
+                src={melissaPhoto} 
+                alt="Melissa Pomi" 
+                className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
+              />
               <h3 className="font-gothic text-3xl font-bold text-foreground uppercase tracking-wide mb-2">
                 Melissa Pomi
               </h3>
