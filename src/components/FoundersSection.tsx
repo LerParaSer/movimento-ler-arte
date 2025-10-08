@@ -51,7 +51,7 @@ export const FoundersSection = () => {
               <img 
                 src={melissaPhoto} 
                 alt="Melissa Pomi" 
-                className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
+                className="w-32 h-32 rounded-full mx-auto mb-6 object-cover object-top"
               />
               <h3 className="font-gothic text-3xl font-bold text-foreground uppercase tracking-wide mb-2">
                 Melissa Pomi
