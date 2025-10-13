@@ -42,7 +42,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section className="h-screen relative overflow-hidden mt-24">
+    <section className="h-screen relative overflow-hidden mt-24 md:mt-0">
       {/* Background Carousel */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
