@@ -13,14 +13,27 @@ export const AboutSection = () => {
           
           <div className="font-nunito text-lg lg:text-xl text-foreground leading-relaxed space-y-6">
             <p>
-              O Movimento Ler para Ser nasceu para <span className="text-foreground font-semibold">democratizar o acesso à literatura e à arte</span>, 
-              proporcionando experiências enriquecedoras a crianças em situação de vulnerabilidade.
+              Ler é mais do que decifrar palavras: é <span className="font-semibold">abrir janelas para dentro e para fora</span>, é encontrar-se e reconhecer o outro.
             </p>
             
-            <p className="text-foreground font-medium text-xl lg:text-2xl">
-              Nossa missão é clara: <span className="font-script text-foreground text-4xl lg:text-5xl">"formar através da leitura e da arte"</span>, 
-              sem assistencialismo, mas com foco no desenvolvimento humano, na criatividade 
-              e no alinhamento com a Agenda 2030 da ONU.
+            <p>
+              O Movimento Ler para Ser nasce dessa convicção: de que <span className="font-semibold">um livro nas mãos de uma criança pode ser o início de um caminho</span>. Caminho que desperta a imaginação, alarga horizontes e ajuda a formar seres mais inteiros, mais curiosos, mais humanos.
+            </p>
+
+            <p>
+              Nosso propósito é <span className="font-semibold">desenvolver o hábito da leitura</span> no maior número possível de crianças, oferecendo <span className="font-semibold">experiências sensoriais que unem literatura e arte</span>. Os livros ilustrados são cuidadosamente escolhidos com o intuito de envolver e provocar, estimulando a criatividade e o autoconhecimento.
+            </p>
+
+            <p>
+              Mais do que um encontro isolado, o projeto é uma <span className="font-semibold">jornada contínua</span>. Ao longo de <span className="font-semibold">pelo menos quatro encontros</span>, cada grupo de crianças percorre um caminho que integra mediação de leitura, oficinas artísticas e partilha.
+            </p>
+
+            <p>
+              E porque acreditamos que a leitura não termina no instante da escuta, mas continua em cada memória e em cada gesto, ao final do ciclo <span className="font-semibold">cada participante leva para casa o livro trabalhado</span>, podendo reler, reviver e compartilhar a experiência com quem desejar.
+            </p>
+
+            <p className="font-semibold text-xl lg:text-2xl">
+              Movimento Ler para Ser: leitura que desperta e transforma.
             </p>
           </div>
           
