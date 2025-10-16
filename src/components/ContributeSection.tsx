@@ -81,7 +81,7 @@ export const ContributeSection = () => {
         
         {/* Call to Action Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="bg-secondary/20 rounded-xl p-6 text-center">
+          <div className="bg-secondary/20 rounded-2xl p-8 text-center hover:shadow-xl transition-all hover:-translate-y-2">
             <h4 className="font-gothic text-xl font-bold text-foreground uppercase mb-4">
               Para Instituições e Parcerias
             </h4>
@@ -98,7 +98,7 @@ export const ContributeSection = () => {
             </Button>
           </div>
           
-          <div className="bg-secondary/20 rounded-xl p-6 text-center">
+          <div className="bg-secondary/20 rounded-2xl p-8 text-center hover:shadow-xl transition-all hover:-translate-y-2">
             <h4 className="font-gothic text-xl font-bold text-foreground uppercase mb-4">
               Amigos do Movimento
             </h4>
