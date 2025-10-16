@@ -81,11 +81,11 @@ export const ContributeSection = () => {
         
         {/* Call to Action Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="bg-secondary/20 rounded-2xl p-8 text-center hover:shadow-xl transition-all hover:-translate-y-2">
+          <div className="bg-secondary/20 rounded-2xl p-8 text-center hover:shadow-xl transition-all hover:-translate-y-2 min-h-[340px] flex flex-col">
             <h4 className="font-gothic text-xl font-bold text-foreground uppercase mb-4">
               Para Instituições e Parcerias
             </h4>
-            <p className="font-nunito text-foreground mb-6">
+            <p className="font-nunito text-foreground mb-6 flex-grow">
               Preencha nosso formulário e vamos conversar sobre como podemos trabalhar juntos.
             </p>
             <Button 
@@ -98,11 +98,11 @@ export const ContributeSection = () => {
             </Button>
           </div>
           
-          <div className="bg-secondary/20 rounded-2xl p-8 text-center hover:shadow-xl transition-all hover:-translate-y-2">
+          <div className="bg-secondary/20 rounded-2xl p-8 text-center hover:shadow-xl transition-all hover:-translate-y-2 min-h-[340px] flex flex-col">
             <h4 className="font-gothic text-xl font-bold text-foreground uppercase mb-4">
               Amigos do Movimento
             </h4>
-            <p className="font-nunito text-foreground mb-6">
+            <p className="font-nunito text-foreground mb-6 flex-grow">
               Junte-se ao nosso grupo no WhatsApp e fique por dentro de todas as novidades.
             </p>
             <Button 
