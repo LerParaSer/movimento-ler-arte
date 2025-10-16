@@ -6,13 +6,22 @@ export const MediaSection = () => {
       title: "Danieli Rosa - Entrevista",
       description: "Conheça a história e a paixão por trás do movimento",
       url: "https://www.youtube.com/watch?v=aCtoy5Axp3A&t=159s",
-      presenter: "Danieli Rosa"
+      presenter: "Danieli Rosa",
+      type: "video"
     },
     {
       title: "Melissa Pomi - Entrevista", 
       description: "A descoberta do poder transformador da literatura",
       url: "https://www.youtube.com/watch?v=SVrfpMO14Yw",
-      presenter: "Melissa Pomi"
+      presenter: "Melissa Pomi",
+      type: "video"
+    },
+    {
+      title: "Fundação Nestore Scodro promove leitura e arte",
+      description: "Conheça mais sobre o projeto Ler para Ser",
+      url: "https://brazilurgente.com.br/fundacao-nestore-scodro-promove-leitura-e-arte-com-o-projeto-ler-para-ser/",
+      presenter: "Brazil Urgente",
+      type: "article"
     }
   ];
 
@@ -44,30 +53,48 @@ export const MediaSection = () => {
               </div>
               
               <div className="rounded-lg p-6 mb-6" style={{backgroundColor: '#F4E9D5'}}>
-                <div className="aspect-video rounded-lg overflow-hidden mb-4">
-                  <iframe
-                    src={interview.url.replace('watch?v=', 'embed/').replace('&t=159s', '?start=159')}
-                    className="w-full h-full"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title={interview.title}
-                  />
-                </div>
-                
-                <div className="text-center">
-                  <p className="font-nunito font-semibold text-foreground mb-2">
-                    {interview.presenter}
-                  </p>
-                  <a 
-                    href={interview.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-nunito text-primary hover:text-primary/80 transition-colors font-semibold"
-                  >
-                    Assistir no YouTube
-                  </a>
-                </div>
+                {interview.type === 'video' ? (
+                  <>
+                    <div className="aspect-video rounded-lg overflow-hidden mb-4">
+                      <iframe
+                        src={interview.url.replace('watch?v=', 'embed/').replace('&t=159s', '?start=159')}
+                        className="w-full h-full"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title={interview.title}
+                      />
+                    </div>
+                    
+                    <div className="text-center">
+                      <p className="font-nunito font-semibold text-foreground mb-2">
+                        {interview.presenter}
+                      </p>
+                      <a 
+                        href={interview.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-nunito text-primary hover:text-primary/80 transition-colors font-semibold"
+                      >
+                        Assistir no YouTube
+                      </a>
+                    </div>
+                  </>
+                ) : (
+                  <div className="text-center py-8">
+                    <p className="font-nunito font-semibold text-foreground mb-4">
+                      {interview.presenter}
+                    </p>
+                    <a 
+                      href={interview.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-nunito font-semibold"
+                    >
+                      Ler Artigo Completo
+                    </a>
+                  </div>
+                )}
               </div>
               
               <div className="text-center">
