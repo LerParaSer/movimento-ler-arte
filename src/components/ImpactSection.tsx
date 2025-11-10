@@ -90,20 +90,20 @@ export const ImpactSection = () => {
           />
           <StatCard
             icon={<Users className="w-8 h-8" />}
-            number="+440"
+            number="+850"
             description="Presenças registradas"
             color="purple"
           />
           <StatCard
             icon={<School className="w-8 h-8" />}
-            number="8"
+            number="10"
             description="Instituições contempladas"
             color="blue"
           />
           <StatCard
             icon={<BookOpen className="w-8 h-8" />}
-            number="+60"
-            description="Livros por instituição"
+            number="+780"
+            description="Livros entregues"
             color="yellow"
           />
           <StatCard
