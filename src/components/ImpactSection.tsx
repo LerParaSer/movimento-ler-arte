@@ -74,11 +74,8 @@ export const ImpactSection = () => {
         {/* Resultados */}
         <div className="text-center mb-12">
           <h3 className="font-gothic text-3xl lg:text-4xl font-bold text-foreground uppercase tracking-wide mb-4">
-            Resultados do 1º Ciclo
+            Resultados
           </h3>
-          <p className="font-nunito text-lg text-foreground mb-2">
-            (desde Agosto/23)
-          </p>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">
