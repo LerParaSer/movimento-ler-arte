@@ -12,7 +12,7 @@ export const MediaSection = () => {
     {
       title: "Melissa Pomi - Entrevista", 
       description: "A descoberta do poder transformador da literatura",
-      url: "https://www.youtube.com/watch?v=HJ60fAti9Os&list=PLzoIPcC8bO1FsqoT7lPm5wzJhd39e7wUR&index=12",
+      url: "https://www.youtube.com/watch?v=HJ60fAti9Os",
       presenter: "Melissa Pomi",
       type: "video"
     },
@@ -37,7 +37,7 @@ export const MediaSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {interviews.map((interview, index) => (
             <div key={index} className="bg-white rounded-xl p-6 hover:shadow-xl transition-all hover:-translate-y-2">
               <div className="text-center mb-6">
@@ -57,7 +57,7 @@ export const MediaSection = () => {
                   <>
                     <div className="aspect-video rounded-lg overflow-hidden mb-4">
                       <iframe
-                        src={interview.url.replace('watch?v=', 'embed/').replace('&t=159s', '?start=159')}
+                        src={interview.url.replace('watch?v=', 'embed/').split('&')[0]}
                         className="w-full h-full"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
