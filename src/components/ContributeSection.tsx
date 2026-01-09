@@ -44,7 +44,7 @@ export const ContributeSection = () => {
           {/* Apadrinhamento */}
           <div className="bg-gradient-to-br from-accent/10 to-accent/5 rounded-2xl p-6 text-center border border-accent/20 hover:shadow-xl transition-all hover:-translate-y-2 flex flex-col min-h-[400px]">
             <div className="flex justify-center mb-4">
-              <img src={iconStar} alt="Apadrinhamento" className="w-14 h-14" />
+              <img src={iconParcerias2} alt="Apadrinhamento" className="w-14 h-14" />
             </div>
             <h3 className="font-gothic text-xl font-bold text-foreground uppercase tracking-wide mb-3">
               Apadrinhamento
