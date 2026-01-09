@@ -88,7 +88,7 @@ export const ContributeSection = () => {
               <img src={iconParcerias2} alt="Parcerias" className="w-16 h-16" />
             </div>
             <h4 className="font-gothic text-xl font-bold text-foreground uppercase mb-4">
-              Para Instituições e Parcerias
+              Para Instituições
             </h4>
             <p className="font-nunito text-foreground mb-6 flex-grow">
               Preencha nosso formulário e vamos conversar sobre como podemos trabalhar juntos.

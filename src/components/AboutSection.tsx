@@ -25,11 +25,11 @@ export const AboutSection = () => {
             </p>
 
             <p>
-              Mais do que um encontro isolado, o projeto é uma <span className="font-semibold">jornada contínua</span>. Ao longo de <span className="font-semibold">pelo menos quatro encontros</span>, cada grupo de crianças percorre um caminho que integra mediação de leitura, oficinas artísticas e partilha.
+              Mais do que um encontro isolado, o projeto é uma <span className="font-semibold">jornada contínua</span>. Ao longo de <span className="font-semibold">pelo menos quatro meses</span>, cada grupo de crianças percorre um caminho que integra mediação de leitura, oficinas artísticas e partilha.
             </p>
 
             <p>
-              E porque acreditamos que a leitura não termina no instante da escuta, mas continua em cada memória e em cada gesto, ao final do ciclo <span className="font-semibold">cada participante leva para casa o livro trabalhado</span>, podendo reler, reviver e compartilhar a experiência com quem desejar.
+              E porque acreditamos que a leitura não termina no instante da escuta, mas continua em cada memória e em cada gesto, ao final do encontro <span className="font-semibold">cada participante leva para casa o livro trabalhado</span>, podendo reler, reviver e compartilhar a experiência com quem desejar.
             </p>
 
             <p className="font-semibold text-xl lg:text-2xl">
@@ -46,7 +46,7 @@ export const AboutSection = () => {
                 Nossa Missão
               </h3>
               <p className="font-nunito text-foreground">
-                Formar através da leitura e transformar através da arte
+                Formar por meio da leitura e transformar por meio da arte
               </p>
             </div>
             

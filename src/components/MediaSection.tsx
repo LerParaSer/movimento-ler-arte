@@ -12,7 +12,7 @@ export const MediaSection = () => {
     {
       title: "Melissa Pomi - Entrevista", 
       description: "A descoberta do poder transformador da literatura",
-      url: "https://www.youtube.com/watch?v=SVrfpMO14Yw",
+      url: "https://www.youtube.com/watch?v=HJ60fAti9Os&list=PLzoIPcC8bO1FsqoT7lPm5wzJhd39e7wUR&index=11",
       presenter: "Melissa Pomi",
       type: "video"
     },

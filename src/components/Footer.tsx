@@ -114,7 +114,7 @@ export const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="text-center">
             <p className="font-script text-4xl text-white mb-4">
-              "Formar através da leitura. Transformar através da arte."
+              "Formar por meio da leitura. Transformar por meio da arte."
             </p>
             <p className="font-nunito text-background/60 text-sm">
               © {new Date().getFullYear()} Movimento Ler para Ser. Todos os direitos reservados.
