@@ -1,10 +1,22 @@
 import danieliPhoto from "@/assets/founders/danieli-rosa.jpg";
 import melissaPhoto from "@/assets/founders/melissa-pomi.jpg";
+import patternPapel from "@/assets/graphics/pattern-papel.jpg";
 
 export const FoundersSection = () => {
   return (
-    <section id="quem-somos" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section 
+      id="quem-somos" 
+      className="py-20 relative"
+      style={{
+        backgroundImage: `url(${patternPapel})`,
+        backgroundRepeat: 'repeat',
+        backgroundSize: '400px auto',
+      }}
+    >
+      {/* Overlay sutil para melhorar legibilidade */}
+      <div className="absolute inset-0 bg-background/30" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="font-gothic text-4xl lg:text-6xl font-bold text-foreground uppercase tracking-wide mb-6">
             Quem Somos
@@ -16,7 +28,7 @@ export const FoundersSection = () => {
         
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Danieli Rosa */}
-          <div className="bg-secondary/20 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div className="text-center mb-6">
               <img 
                 src={danieliPhoto} 
@@ -46,7 +58,7 @@ export const FoundersSection = () => {
           </div>
           
           {/* Melissa Pomi */}
-          <div className="bg-secondary/20 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div className="text-center mb-6">
               <img 
                 src={melissaPhoto} 
