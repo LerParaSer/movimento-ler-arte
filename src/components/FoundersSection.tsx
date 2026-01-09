@@ -63,9 +63,9 @@ export const FoundersSection = () => {
             
             <div className="space-y-4 font-nunito text-foreground">
               <p>
-                Descobriu na literatura uma ferramenta poderosa ao acompanhar o desenvolvimento 
+                Descobriu na literatura um instrumento poderoso ao acompanhar o desenvolvimento 
                 dos próprios filhos. Hoje, atua para que mais crianças vivenciem essa mesma 
-                transformação através da leitura e da arte.
+                transformação por meio da literatura e da arte.
               </p>
               <div className="bg-background rounded-xl p-4 border-l-4 border-accent">
                 <p className="font-nunito text-sm text-accent italic">

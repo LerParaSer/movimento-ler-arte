@@ -42,7 +42,7 @@ export const ImpactSection = () => {
               Oficinas Artísticas
             </h3>
             <p className="font-nunito text-foreground text-sm">
-              Produção criativa de cartões-postais, desenhos e ilustrações
+              Produção criativa de cartões-postais, desenhos, ilustrações, expressão corporal, plantio, mágica dentre várias outras
             </p>
           </div>
           
@@ -81,13 +81,13 @@ export const ImpactSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">
           <StatCard
             icon={<Calendar className="w-8 h-8" />}
-            number="+190"
+            number="+80"
             description="Encontros realizados"
             color="green"
           />
           <StatCard
             icon={<Users className="w-8 h-8" />}
-            number="+850"
+            number="Quase 2000"
             description="Presenças registradas"
             color="purple"
           />
@@ -99,13 +99,13 @@ export const ImpactSection = () => {
           />
           <StatCard
             icon={<BookOpen className="w-8 h-8" />}
-            number="+780"
+            number="+2000"
             description="Livros entregues"
             color="yellow"
           />
           <StatCard
             icon={<UserCheck className="w-8 h-8" />}
-            number="+190"
+            number="+10"
             description="Participações voluntárias"
             color="pink"
           />
