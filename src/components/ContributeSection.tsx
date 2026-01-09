@@ -5,6 +5,7 @@ import iconParcerias from "@/assets/graphics/icon-parcerias.png";
 import iconParcerias2 from "@/assets/graphics/icon-parcerias-2.png";
 import iconAmigos from "@/assets/graphics/icon-amigos-movimento.png";
 import iconStar from "@/assets/graphics/star.png";
+import iconSmiley from "@/assets/graphics/icon-smiley.svg";
 
 export const ContributeSection = () => {
   return (
@@ -109,7 +110,7 @@ export const ContributeSection = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-secondary/20 rounded-2xl p-8 text-center hover:shadow-xl transition-all hover:-translate-y-2 min-h-[340px] flex flex-col">
             <div className="flex justify-center mb-6">
-              <img src={iconParcerias2} alt="Parcerias" className="w-16 h-16" />
+              <img src={iconSmiley} alt="Parcerias" className="w-16 h-16" />
             </div>
             <h4 className="font-gothic text-xl font-bold text-foreground uppercase mb-4">
               Para Instituições
