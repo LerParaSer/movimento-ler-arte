@@ -3,10 +3,10 @@ import banner1 from "@/assets/hero/banner-1.jpg";
 import banner2 from "@/assets/hero/banner-2.jpg";
 import banner3 from "@/assets/hero/banner-3.jpg";
 import banner4 from "@/assets/hero/banner-4.jpg";
-import mobile1 from "@/assets/hero/mobile-1.png";
-import mobile2 from "@/assets/hero/mobile-2.png";
-import mobile3 from "@/assets/hero/mobile-3.png";
-import mobile4 from "@/assets/hero/mobile-4.png";
+import mobile1 from "@/assets/hero/mobile-1.jpg";
+import mobile2 from "@/assets/hero/mobile-2.jpg";
+import mobile3 from "@/assets/hero/mobile-3.jpg";
+import mobile4 from "@/assets/hero/mobile-4.jpg";
 
 const heroImages = [
   { 
