@@ -103,8 +103,13 @@ export const Footer = () => {
             </div>
             
             <div className="mt-6">
-              <Button variant="default" size="lg" className="w-full lg:w-auto max-w-xs">
-                Apoiar o Movimento
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="w-full lg:w-auto max-w-xs"
+                onClick={() => window.open('https://wa.me/5562982597070', '_blank')}
+              >
+                💬 Apoiar o Movimento
               </Button>
             </div>
           </div>
