@@ -17,12 +17,17 @@ export const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const menuItems = [
+  const menuItems: { href: string; label: string; external?: boolean }[] = [
     { href: "#sobre", label: "Sobre" },
     { href: "#quem-somos", label: "Quem Somos" },
     { href: "#projetos", label: "Projetos" },
     { href: "#impacto", label: "Nosso Impacto" },
     { href: "#contribuir", label: "Como Ajudar" },
+    {
+      href: "https://drive.google.com/file/d/10Q6UibwzCX0Q3YFn9gmFCcNgWA6b0wKJ/view",
+      label: "Relatório Anual",
+      external: true,
+    },
   ];
 
   return (
@@ -45,7 +50,9 @@ export const Header = () => {
             {menuItems.map((item) => (
               <a 
                 key={item.href}
-                href={item.href} 
+                href={item.href}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
                 className="font-nunito text-foreground hover:text-primary transition-colors duration-200 relative group"
               >
                 {item.label}
@@ -79,7 +86,9 @@ export const Header = () => {
               {menuItems.map((item) => (
                 <a 
                   key={item.href}
-                  href={item.href} 
+                  href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
                   className="font-nunito text-foreground hover:text-primary transition-colors py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >

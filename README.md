@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# Movimento Ler para Ser
 
-## Project info
+Site institucional do **Movimento Ler para Ser** — um movimento que leva literatura e experiências culturais a crianças, despertando imaginação, criatividade e novas possibilidades de vida.
 
-**URL**: https://lovable.dev/projects/4ff5f520-e01a-4c5e-9f56-19ea8706780a
+> "Formar por meio da leitura. Transformar por meio da arte."
 
-## How can I edit this code?
+Desenvolvido por **SUPERFLUX**.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/4ff5f520-e01a-4c5e-9f56-19ea8706780a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
+## Tecnologias
 
 - Vite
 - TypeScript
 - React
-- shadcn-ui
+- shadcn/ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Rodando localmente
 
-Simply open [Lovable](https://lovable.dev/projects/4ff5f520-e01a-4c5e-9f56-19ea8706780a) and click on Share -> Publish.
+Requer Node.js e npm instalados ([instale com nvm](https://github.com/nvm-sh/nvm#installing-and-updating)).
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+# Clone o repositório
+git clone https://github.com/LerParaSer/movimento-ler-arte.git
 
-Yes, you can!
+# Entre na pasta do projeto
+cd movimento-ler-arte
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Instale as dependências
+npm install
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
+
+O site ficará disponível em `http://localhost:8080`.
+
+## Scripts
+
+| Comando | Descrição |
+| --- | --- |
+| `npm run dev` | Servidor de desenvolvimento com hot reload |
+| `npm run build` | Gera o build de produção em `dist/` |
+| `npm run build:dev` | Build em modo development |
+| `npm run preview` | Serve localmente o build de produção |
+| `npm run lint` | Roda o ESLint no projeto |
+
+## Estrutura
+
+```
+src/
+├── assets/       # Imagens e logos
+├── components/   # Componentes da página (Header, Footer, seções)
+│   └── ui/       # Componentes base do shadcn/ui
+├── hooks/        # Hooks reutilizáveis
+├── lib/          # Utilitários
+└── pages/        # Páginas roteadas
+```
+
+## Deploy
+
+O projeto gera um site estático. Basta rodar `npm run build` e publicar o conteúdo da pasta `dist/` em qualquer hospedagem estática (Vercel, Netlify, Cloudflare Pages, GitHub Pages, etc.).
+
+---
+
+© Movimento Ler para Ser. Site por SUPERFLUX.
