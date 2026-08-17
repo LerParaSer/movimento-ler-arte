@@ -63,9 +63,9 @@ export const Header = () => {
               variant="default" 
               size="sm"
               className="bg-primary hover:bg-primary/90 text-white font-medium px-6 py-2 rounded-full transition-all duration-200 hover:scale-105"
-              onClick={() => window.open('https://wa.me/5562982597070', '_blank')}
+              onClick={() => window.open('https://paybox.doare.org/paybox?payboxId=0a312927-769a-4430-afef-bafe0097e975', '_blank')}
             >
-              💬 Apoiar Movimento
+              💛 Apoiar Movimento
             </Button>
           </nav>
 
@@ -100,11 +100,11 @@ export const Header = () => {
                 size="sm"
                 className="bg-primary hover:bg-primary/90 text-white font-medium w-fit mt-4"
                 onClick={() => {
-                  window.open('https://wa.me/5562982597070', '_blank');
+                  window.open('https://paybox.doare.org/paybox?payboxId=0a312927-769a-4430-afef-bafe0097e975', '_blank');
                   setIsMenuOpen(false);
                 }}
               >
-                💬 Apoiar Movimento
+                💛 Apoiar Movimento
               </Button>
             </div>
           </nav>

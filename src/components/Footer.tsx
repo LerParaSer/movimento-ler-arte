@@ -107,9 +107,9 @@ export const Footer = () => {
                 variant="default" 
                 size="lg" 
                 className="w-full lg:w-auto max-w-xs"
-                onClick={() => window.open('https://wa.me/5562982597070', '_blank')}
+                onClick={() => window.open('https://paybox.doare.org/paybox?payboxId=0a312927-769a-4430-afef-bafe0097e975', '_blank')}
               >
-                💬 Apoiar o Movimento
+                💛 Apoiar o Movimento
               </Button>
             </div>
           </div>
