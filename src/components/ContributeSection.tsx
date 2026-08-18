@@ -57,7 +57,7 @@ export const ContributeSection = () => {
               variant="accent" 
               size="lg" 
               className="w-full"
-              onClick={() => window.open('https://paybox.doare.org/paybox?payboxId=0a312927-769a-4430-afef-bafe0097e975', '_blank')}
+              onClick={() => window.open('https://paybox.doare.org/paybox?payboxId=f3fd2a70-751b-487a-91b5-86f8c5ed78dd', '_blank')}
             >
               Apadrinhar
             </Button>
@@ -99,7 +99,7 @@ export const ContributeSection = () => {
               variant="outline" 
               size="lg" 
               className="w-full"
-              onClick={() => window.open('https://paybox.doare.org/paybox?payboxId=f3fd2a70-751b-487a-91b5-86f8c5ed78dd', '_blank')}
+              onClick={() => window.open('https://paybox.doare.org/paybox?payboxId=0a312927-769a-4430-afef-bafe0097e975', '_blank')}
             >
               Fazer doação
             </Button>
